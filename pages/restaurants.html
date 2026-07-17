@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>校園外送｜餐廳</title>
     <link rel="stylesheet" href="../css/base.css" />
+    <style>
+      .restaurant-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.25rem;
+        margin-top: 1rem;
+      }
+      .restaurant-card {
+        border: 1px solid #e2e2e2;
+        border-radius: 12px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        background: #fff;
+      }
+      .restaurant-card h3 {
+        margin: 0;
+      }
+      .restaurant-card .tag {
+        display: inline-block;
+        align-self: flex-start;
+        background: #fef3e2;
+        color: #b8590a;
+        font-size: 0.85rem;
+        padding: 0.15rem 0.6rem;
+        border-radius: 999px;
+      }
+      .restaurant-card .hours {
+        color: #555;
+        font-size: 0.9rem;
+      }
+      .restaurant-card a.menu-link {
+        margin-top: auto;
+        display: inline-block;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        background: #2e7d32;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+      .restaurant-card a.menu-link:hover {
+        background: #256428;
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -13,8 +60,32 @@
     </header>
     <main class="container">
       <section class="page-heading"><p class="eyebrow">選擇餐廳</p><h1>附近餐廳</h1><p class="muted">選一間餐廳，再查看它的菜單。</p></section>
-      <!-- 成員 2：將此區塊改為至少三張餐廳卡片。 -->
-      <section class="placeholder"><h2>餐廳列表</h2><p>待完成：新增餐廳名稱、類型、營業時間與前往菜單按鈕。</p></section>
+
+      <section class="restaurant-list">
+        <h2>餐廳列表</h2>
+        <div class="restaurant-grid">
+          <article class="restaurant-card">
+            <span class="tag">咖啡・輕食</span>
+            <h3>晴天咖啡</h3>
+            <p class="hours">營業時間：08:00 - 20:00（週一至週六）</p>
+            <a class="menu-link" href="menu.html">前往菜單</a>
+          </article>
+
+          <article class="restaurant-card">
+            <span class="tag">中式便當</span>
+            <h3>家常便當店</h3>
+            <p class="hours">營業時間：10:30 - 19:30（週一至週五）</p>
+            <a class="menu-link" href="menu.html">前往菜單</a>
+          </article>
+
+          <article class="restaurant-card">
+            <span class="tag">日式料理</span>
+            <h3>櫻花食堂</h3>
+            <p class="hours">營業時間：11:00 - 21:00（全週無休）</p>
+            <a class="menu-link" href="menu.html">前往菜單</a>
+          </article>
+        </div>
+      </section>
     </main>
     <footer>校園外送小組協作練習</footer><script src="../js/app.js"></script>
   </body>
