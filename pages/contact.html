@@ -12,10 +12,48 @@
       <nav aria-label="主要導覽"><a href="profile.html">會員中心</a><a href="../index.html">首頁</a></nav>
     </header>
     <main class="container">
-      <section class="page-heading"><p class="eyebrow">需要協助嗎？</p><h1>聯絡我們</h1><p class="muted">使用模擬客服資訊，不要填入真實個人資料。</p></section>
-      <!-- 成員 6：完成聯絡資訊或一個不送出的意見表單。 -->
-      <section class="placeholder"><h2>客服資訊</h2><p>待完成：加入服務時間、電子信箱與常見問題連結。</p></section>
+      <section class="page-heading">
+        <p class="eyebrow">需要協助嗎？</p>
+        <h1>聯絡我們</h1>
+        <p class="muted">這裡提供模擬客服資訊，方便你在原型中測試流程。</p>
+      </section>
+
+      <section class="panel">
+        <div class="grid">
+          <article class="card">
+            <h2>客服資訊</h2>
+            <ul class="info-list">
+              <li><strong>服務時間：</strong>週一至週五 10:00–22:00</li>
+              <li><strong>客服信箱：</strong>service@campusdelivery.example</li>
+              <li><strong>常見問題：</strong><a href="#">配送說明</a>、<a href="#">退款流程</a></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h2>意見回饋</h2>
+            <form class="feedback-form">
+              <div class="form-grid">
+                <label>
+                  姓名
+                  <input type="text" placeholder="例如：同學A" />
+                </label>
+                <label>
+                  電子信箱
+                  <input type="email" placeholder="例如：student@example.com" />
+                </label>
+              </div>
+              <label>
+                問題內容
+                <textarea rows="4" placeholder="請輸入你的問題或建議"></textarea>
+              </label>
+              <button type="button">送出意見</button>
+              <p class="muted">這是測試用表單，不會真的寄出任何資料。</p>
+            </form>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer>校園外送小組協作練習</footer><script src="../js/app.js"></script>
+    <footer>校園外送小組協作練習</footer>
+    <script src="../js/app.js"></script>
   </body>
 </html>
